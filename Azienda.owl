@@ -19,3 +19,18 @@ Range: o:Fornitore
 ObjectProperty: o:fornisce
 Domain: o:Azienda
 Range: o:Cliente
+
+Individual: o:ManutenzioniCC
+Types: o:Azienda
+o:haFornitore o:StrumentiPP
+o:fornisce o:VenditoreAmbulante
+
+Individual: o:MarioRossi 
+Types: o:Dipendente
+o:lavoraIn o:ManutenzioniCC
+
+Individual: o:StrumentiPP
+Types: o:Fornitore
+
+Individual: o:VenditoreAmbulante
+Types: o:Cliente
