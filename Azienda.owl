@@ -1,0 +1,21 @@
+Class: o:Azienda
+Class: o:Fornitore
+Class: o:Datore DisjointIn: o:Dipendente
+Class: o:Dipendente DisjointIn: o:Datore
+Class: o:Cliente
+
+ObjectProperty: o:lavoraIn
+Domain: o:Dipendente
+Range: o:Azienda
+
+ObjectProperty: o:gestisce
+Domain: o:Datore
+Range: o:Azienda
+
+ObjectProperty: o:haFornitore
+Domain: o:Azienda
+Range: o:Fornitore
+
+ObjectProperty: o:fornisce
+Domain: o:Azienda
+Range: o:Cliente
