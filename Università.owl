@@ -1,0 +1,15 @@
+Class: o:Università
+Class: o:Studente DisjointIn: o:Professore
+Class: o:Professore DisjointIn: o:Studente
+
+ObjectProperty: o:insegnaIn
+Domain: o:Professore
+Range: o:Università
+
+ObjectProperty: o:studiaIn
+Domain: o:Studente
+Range: o:Università
+
+Individual: o:Unimarconi Types: o:Università
+Individual: o:MarioRossi Types: o:Professore
+Individual: o:AndreaBianchi Types: o:Studente
