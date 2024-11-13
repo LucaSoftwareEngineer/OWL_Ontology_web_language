@@ -1,0 +1,18 @@
+Class: o:Animale DisjointIn o:Cibo
+Class: o:Cibo DisjointIn o:Animale
+Class: o:Domestico SubClassOf: o:Animale
+
+ObjectProperty: o:mangia
+Domain: o:Animale
+Range: o:Cibo
+
+Individual: o:Croccantini
+Types: o:Cibo
+
+Individual: o:Cane
+Types: o:Domestico
+o:mangia o:Croccantini
+
+Individual: o:Gatto
+Types: o:Domestico
+o:mangia o:Croccantini
